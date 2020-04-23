@@ -301,4 +301,7 @@ a.custom-btn.button-a.d-none {
 .bottom-banner-text {
     padding: 0px 33px;
 }
+.footer-button a {
+    font-size: 16px !important;
+}
 }
