@@ -14,6 +14,7 @@ html{
   height: 100%;
 }
 body {
+  position:relative;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -408,3 +409,52 @@ a {
     bottom: 0;
 }
 /************** Template CSS End **************/
+
+
+/* Modal */
+
+.modal_section {
+  width: 350px;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  background-color: #00AEEF;
+  box-shadow: 0 0 5px #6f6f6f;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform: translateX(-110%);
+  transition: transform .8s ease;
+}
+
+
+
+.modal_section.show {
+  transform: translateX(0);
+}
+.modal_img {
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 15px 10px 10px 24px;
+    width: 150px;
+}
+
+.modal_content {
+  padding: 20px 10px 5px 0;
+  width: 100%;
+}
+
+.modal_content p {
+  font-size: .867rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.modal_content span {
+  font-size: 13px;
+  color: #fff;
+}
+
+/* Modal end */

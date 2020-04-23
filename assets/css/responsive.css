@@ -145,6 +145,13 @@ a.custom-btn.button-a {
     font-size: 20px;
 }
 }
+
+@media (min-width: 768px){
+	.footer-button{
+		display: none;
+	}
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
    .about-a{
@@ -242,6 +249,20 @@ a.custom-btn.button-a {
 a.custom-btn.button-a.d-none {
     display: none !important;
 }
+.modal_section {
+    width: 300px;
+    position: fixed;
+    top: 15px;
+        height: 107px;
+        z-index: 99999999;
+        left: 0;
+}
+.modal_img {
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 17px;
+    width: 101px;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -307,5 +328,8 @@ a.custom-btn.button-a.d-none {
 .single-rating {
     width: 100%;
     padding-bottom: 20px;
+}
+.header-title p br {
+    display: none;
 }
 }

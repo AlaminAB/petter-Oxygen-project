@@ -17,6 +17,16 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117776233-12"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-117776233-12');
+</script>
 </head>
 
 <body>
@@ -26,6 +36,9 @@
     <!--********************************
     ***** Code Start From Here *****
     ******************************** -->
+
+
+
     <header class="py-3">
         <div class="container">
             <div class="custom-container">
@@ -258,6 +271,8 @@
             </div>
         </div>
     </section>
+
+    
     <section>
         <div class="container">
                <div class="row">
@@ -300,6 +315,7 @@
     </section>
 
 <footer>
+  <div class="container">
   <div class="custom-container py-5">
     <div class="footer-text">
       <p>Copyright © 2020 Blaux Oxi Level | All Rights Reserved</p>
@@ -321,11 +337,27 @@
   
 </div>
 
+
+
+  <!-- modal section -->
+  <div class="modal_section d-flex ">
+    <div class="modal_img">
+      <img src="assets/img/product-float.png" alt="Product">
+    </div>
+    <div class="modal_content">
+      <p><span id="popupdata"></span> <br>just bought:&nbsp; <strong>Blaux Oxi Level</strong></p>
+      <div class="text-right">
+        <span>JUST NOW</span>
+      </div>
+    </div>
+  </div>
+  <!-- modal section end -->
+
  
     <!-- All JavaScript -->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
 
@@ -356,6 +388,21 @@
         
       }
     })
+       // Modal animation
+
+       let  data = ['Elizabeth L. from Charlotte, NC','Michael C. from Memphis, TN','Oscar D. from Birmingham, AL','Steve O. from Las Vegas, NV ','Michael M. from Atlanta, GA','Charles V. from Milwaukee, WI','Jennifer Y. from Denver, CO','Nancy F. from Washington D.C.','Hannah F. from Cheyenne, WY','Margaret P. from Los Angeles, CA','David M. from Seattle, WA'];
+
+var $post = $(".modal_section");
+let count = 0;
+setInterval(function () {
+  $post.toggleClass("show");
+$("#popupdata").html(data[count]);
+count++;
+if(count>data.length){
+  count= 0;
+}
+}, 6000);
+
     </script>
 </body>
 
